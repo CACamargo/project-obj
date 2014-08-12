@@ -10,7 +10,7 @@ Respecto al gameplay como tal, este se desarrollará en un gran nivel de tipo la
 
 Mi propósito es que el juego presente un buen reto al jugador pero sin llegar a un nivel muy injusto, con el fin de que, con planeación y dedicación suficientes,  pueda tener una sensación de logro y éxito al final.
 
-project-obj
+Requerimientos Funcionales
 ===========
 
 Inmediatamente tras la ejecución del programa, el jugador será recibido por una pantalla inicial en la que podrá elegir entre empezar una nueva aventura o salir del juego.
