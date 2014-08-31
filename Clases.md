@@ -93,7 +93,6 @@ Aún hay clases con elementos similares, asi que puede agruparse mejor la lista 
  * Armadura
  * Poción
  * Tesoro
- * Hechizo
 
 * Mapa
  * Cuarto (múltiples)
