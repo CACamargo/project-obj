@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/sprite.gif</file>
+        <file>img/corridor.jpg</file>
+        <file>img/wall.jpg</file>
+    </qresource>
+</RCC>
