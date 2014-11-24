@@ -1,5 +1,13 @@
 #include "entity.h"
 
+Entity::~Entity() {
+
+}
+
+Entity::Entity(QString name, int str, int dex, int intl, int con, int spd)
+    : m_abilities(),m_name(name), m_status("OK"), m_level(1), m_HP(con*3), m_strength(str), m_dexterity(dex), m_intelligence(intl), m_constitution(con), m_speed(spd) {}
+
+
 QString Entity::getName(){
     return m_name;
 }
@@ -14,38 +22,38 @@ QList<Ability> Entity::getAbilities(){
 
 int Entity::getStat(QString statName){
     if (statName == "lvl")
-        return m_lvl;
+        return m_level;
     else if (statName == "hp")
-        return m_hp;
+        return m_HP;
     else if (statName == "str")
-        return m_str;
+        return m_strength;
     else if (statName == "dex")
-        return m_dex;
+        return m_dexterity;
     else if (statName == "int")
-        return m_int;
+        return m_intelligence;
     else if (statName == "con")
-        return m_con;
+        return m_constitution;
     else if (statName == "spd")
-        return m_spd;
+        return m_speed;
     else
         return 0;
 }
 
 void Entity::setStat(QString statName, int newValue){
     if (statName == "lvl")
-        m_lvl = newValue;
+        m_level = newValue;
     else if (statName == "str")
-        m_str = newValue;
+        m_strength = newValue;
     else if (statName == "dex")
-        m_dex = newValue;
+        m_dexterity = newValue;
     else if (statName == "int")
-        m_int = newValue;
+        m_intelligence = newValue;
     else if (statName == "con"){
-        m_con = newValue;
-        m_hp = newValue*3;
+        m_constitution = newValue;
+        m_HP = newValue*3;
     }
     else if (statName == "spd")
-        m_spd = newValue;
+        m_speed = newValue;
 }
 
 void Entity::addAbility(QString abilityName, int dam, QString special){
@@ -64,10 +72,3 @@ void Entity::delAbility(QString abilityName){
         }
     }
 }
-
-Entity::~Entity() {
-
-}
-
-Entity::Entity(QString name, int str, int dex, int intl, int con, int spd)
-    : m_abilities(),m_name(name), m_status("OK"), m_lvl(1), m_hp(con*3), m_str(str), m_dex(dex), m_int(intl), m_con(con), m_spd(spd) {}

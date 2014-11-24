@@ -11,26 +11,26 @@ public:
     QString getStatus();
     QList<Ability> getAbilities();
     virtual QString toString() = 0;
-    virtual int getStat(QString statName);
-    virtual void setStat(QString statName, int newValue);
-    void addAbility(QString abilityName, int dam, QString special);
-    void delAbility(QString abilityName);
+    virtual int getStat(QString);
+    virtual void setStat(QString, int);
+    void addAbility(QString, int, QString);
+    void delAbility(QString);
     virtual ~Entity();
 
 protected:
-    Entity(QString name, int str, int dex, int intl, int con, int spd);
+    Entity(QString, int, int, int, int, int);
 
 private:
     QList<Ability> m_abilities;
     QString m_name;
     QString m_status;
-    int m_lvl;
-    int m_hp;
-    int m_str;
-    int m_dex;
-    int m_int;
-    int m_con;
-    int m_spd;
+    int m_level;
+    int m_HP;
+    int m_strength;
+    int m_dexterity;
+    int m_intelligence;
+    int m_constitution;
+    int m_speed;
 };
 
 #endif // ENTITY_H

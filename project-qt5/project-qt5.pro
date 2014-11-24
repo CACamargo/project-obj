@@ -6,7 +6,9 @@ SOURCES += main.cpp \
     player.cpp \
     entity.cpp \
     ability.cpp \
-    scene.cpp
+    scene.cpp \
+    item.cpp \
+    level.cpp
 
 RESOURCES += qml.qrc \
     assets.qrc
@@ -21,4 +23,9 @@ HEADERS += \
     entity.h \
     player.h \
     ability.h \
-    scene.h
+    scene.h \
+    item.h \
+    level.h \
+    weapon.h \
+    armor.h \
+    potion.h

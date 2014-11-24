@@ -8,11 +8,11 @@ public:
     QString getName();
     int getValue();
     QString getSpecial();
-    Ability(QString name, int dam, QString special);
+    Ability(QString, int, QString);
 
 private:
     QString m_name;
-    int m_dam;
+    int m_damage;
     QString m_special;
 };
 

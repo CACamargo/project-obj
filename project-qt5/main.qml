@@ -4,6 +4,7 @@ import QtQuick.Controls 1.2
 import QtQuick.Controls.Styles 1.2
 
 Window {
+    id: topView
     visible: true
     width: 1024
     height: 768
@@ -67,11 +68,32 @@ Window {
     }
 
     Item {
+        objectName: "mainWindow"
         id: mainWindow
         width: parent.width
+        focus: true
         anchors {
             top: parent.top
             bottom: userCommands.top
+        }
+        signal move(string direction)
+        signal changeImage(string newID)
+        Keys.onUpPressed: {mainWindow.move("forward")}
+        Keys.onLeftPressed: {mainWindow.move("left")}
+
+        /*MouseArea {
+           hoverEnabled: false
+           anchors.fill: parent
+           onClicked: {
+               mainWindow.move("forward")
+           }
+       }*/
+
+        function updateImage(newID){
+            if (newID === "corridor")
+                mainWindow.changeImage("../img/corridor.jpg")
+            if (newID === "cave")
+                mainWindow.changeImage("../img/cave.jpg")
         }
 
         Image {
@@ -79,11 +101,18 @@ Window {
             anchors.fill: parent
             source: "../img/corridor.jpg"
             fillMode: Image.Stretch
+            cache: false
+
+            Connections {
+             target: mainWindow
+             onChangeImage: {background.source = newID}
+            }
 
             Image {
                 id: sprite
                 anchors.centerIn: parent
-                source: "../img/sprite.gif"
+                source: ""
+                //source: "../img/sprite.gif"
                 fillMode: Image.PreserveAspectFit
             }
         }
