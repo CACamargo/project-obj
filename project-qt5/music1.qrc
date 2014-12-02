@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>music/corridor.wav</file>
+        <file>music/encounter.wav</file>
+    </qresource>
+</RCC>

@@ -1,6 +1,6 @@
 TEMPLATE = app
 
-QT += qml quick
+QT += qml quick multimedia
 
 SOURCES += main.cpp \
     player.cpp \
@@ -8,10 +8,18 @@ SOURCES += main.cpp \
     ability.cpp \
     scene.cpp \
     item.cpp \
-    level.cpp
+    level.cpp \
+    enemy.cpp \
+    chest.cpp \
+    npc.cpp
 
 RESOURCES += qml.qrc \
-    assets.qrc
+    backgrounds.qrc \
+    models.qrc \
+    music1.qrc \
+    music2.qrc \
+    ui.qrc \
+    effect1.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
@@ -26,6 +34,6 @@ HEADERS += \
     scene.h \
     item.h \
     level.h \
-    weapon.h \
-    armor.h \
-    potion.h
+    enemy.h \
+    chest.h \
+    npc.h

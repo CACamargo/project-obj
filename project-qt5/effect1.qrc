@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>effects/enemyhit.wav</file>
+        <file>effects/wound.wav</file>
+        <file>effects/move.wav</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/amazon.gif</file>
+        <file>img/axe.png</file>
+        <file>img/demon.gif</file>
+        <file>img/dragon.gif</file>
+        <file>img/goblin.gif</file>
+        <file>img/health.png</file>
+        <file>img/horseman.gif</file>
+        <file>img/iron_boots.png</file>
+        <file>img/iron_chest.png</file>
+        <file>img/iron_greaves.png</file>
+        <file>img/iron_helm.png</file>
+        <file>img/mace.png</file>
+        <file>img/mana.png</file>
+        <file>img/shield.gif</file>
+        <file>img/sword.png</file>
+        <file>img/old man.png</file>
+        <file>img/chest.png</file>
+        <file>img/arrow.png</file>
+    </qresource>
+</RCC>

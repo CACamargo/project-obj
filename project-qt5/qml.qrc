@@ -1,7 +1,15 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>CtButton.qml</file>
-        <file>DisplayScene.qml</file>
+        <file>CustomButton.qml</file>
+        <file>GridCell.qml</file>
+        <file>ItemGrid.qml</file>
+        <file>EquipSlot.qml</file>
+        <file>EquipView.qml</file>
+        <file>MyItemView.qml</file>
+        <file>UserCommands.qml</file>
+        <file>GridTextCell.qml</file>
+        <file>AbilityGrid.qml</file>
+        <file>CombatItemGrid.qml</file>
     </qresource>
 </RCC>

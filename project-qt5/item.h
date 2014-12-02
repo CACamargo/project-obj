@@ -5,17 +5,23 @@
 
 class Item{
 public:
-    int getWeight();
+    Item();
+    Item(QString name, QString type, QString special, int effectValue, int weight);
+    Item(const Item& other);
+    Item& operator=(const Item& other);
+    QString getName();
     QString getType();
     QString getSpecial();
-    QString getID();
-protected:
-    Item(int, QString, QString, QString);
+    QString toString();
+    int getEffect();
+    int getWeight();    
+
 private:
-    int m_weight;
+    QString m_name;
     QString m_type;
     QString m_special;
-    QString m_imageID;    
+    int m_effect;
+    int m_weight;
 };
 
 #endif // ITEM_H
